@@ -7,8 +7,7 @@ This provides a [git pre-commit hook](https://git-scm.com/book/en/v2/Customizing
 If pep8 fails, the content will not be committed to the repo. This enables
 fast turnaround for enforcing code styles within your repository.
 
-The hook script runs on the staged content, not the current working copy. This
-ensures that the true content about to committed has been vetted.
+The hook script runs on the staged content, not the current working copy.
 
 
 Installation
@@ -18,7 +17,7 @@ If you'd like to distribute the pre-commit hook with your repository:
 - Commit them to the repository so that it will be easy to share the script
   with other contributors.
 
-To just use the hook, copy the `git-hooks/pre-commit` file into your
+To use the hook only, copy the `git-hooks/pre-commit` file into your
 repository's `.git/hooks` directory.
 
 
