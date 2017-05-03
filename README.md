@@ -37,5 +37,5 @@ exclude=migrations/*
 
 See also
 --------
-[lint-staged](https://github.com/okonet/lint-staged)
-[Running Jest Tests Before Each Git Commit](https://benmccormick.org/2017/02/26/running-jest-tests-before-each-git-commit/)
+* [lint-staged](https://github.com/okonet/lint-staged)
+* [Running Jest Tests Before Each Git Commit](https://benmccormick.org/2017/02/26/running-jest-tests-before-each-git-commit/)
