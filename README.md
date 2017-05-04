@@ -9,6 +9,7 @@ fast turnaround for enforcing code styles within your repository.
 
 The hook script runs on the staged content, not the current working copy.
 
+_Most of the code is taken from this [post](https://benmccormick.org/2017/02/26/running-jest-tests-before-each-git-commit/) by Ben McCormick_
 
 Installation
 ------------
@@ -25,7 +26,7 @@ Customizing pep8
 ----------------
 See the [pep8 documentation](http://pep8.readthedocs.io/en/release-1.7.x/intro.html#configuration).
 The easiest way to distribute a code style for a repository is to commit a `pep8`
-section to `setup.cfg` along with this hook.
+section to `setup.cfg`.
 
 Example:
 ```
