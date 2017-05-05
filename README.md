@@ -32,6 +32,7 @@ script.py:1:9 E211 whitespace before '('
 script.py:1:29 E231 missing whitespace after ','
     pep8 Failed: script.py
 
+$ 
 ```
 
 Installation
