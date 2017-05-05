@@ -5,11 +5,34 @@ Automatically run pep8 on staged git content before committing to your repo.
 This provides a [git pre-commit hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) that runs
 [pep8](http://pep8.readthedocs.io/en/release-1.7.x/) on staged git content.
 If pep8 fails, the content will not be committed to the repo. This enables
-fast turnaround for enforcing code styles within your repository.
+fast turnaround to enforce code styles within your repository.
 
-The hook script runs on the staged content, not the current working copy.
+The hook runs on the staged content, not the current working copy.
 
 _Most of the code is taken from this [post](https://benmccormick.org/2017/02/26/running-jest-tests-before-each-git-commit/) by Ben McCormick_
+
+
+Example
+-------
+
+When you try to commit a file with pep8 errors, git will bail before
+completing the commit.
+
+`script.py`
+```
+def line (slope, y_interpect,x):
+    return slope*x+y_intercept
+```
+
+```
+$ git add script.py
+$ git commit
+
+script.py:1:9 E211 whitespace before '('
+script.py:1:29 E231 missing whitespace after ','
+    pep8 Failed: script.py
+
+```
 
 Installation
 ------------
